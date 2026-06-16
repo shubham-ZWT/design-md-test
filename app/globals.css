@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-albert-sans);
+  --font-mono: var(--font-jetbrains-mono);
+  --font-display: var(--font-albert-sans);
+  --font-code: var(--font-jetbrains-mono);
+  --font-ui: var(--font-albert-sans);
+
+  --color-primary: #1e40af;
+  --color-primary-deep: #1e3a8a;
+  --color-on-primary: #ffffff;
+  --color-hero-glow: #3b82f6;
+  --color-hero-wash: #bfdbfe;
+
+  --color-canvas: #f8fafc;
+  --color-surface-subtle: #f1f5f9;
+  --color-surface-card: #ffffff;
+  --color-surface-dark: #0f172a;
+  --color-surface-deep: #020617;
+  --color-hairline: rgba(15, 23, 42, 0.12);
+  --color-hairline-strong: #0f172a;
+  --color-divider-dark: rgba(248, 250, 252, 0.2);
+  --color-ring-focus: rgba(59, 130, 246, 0.5);
+
+  --color-ink: #0f172a;
+  --color-body: #334155;
+  --color-charcoal: #475569;
+  --color-mute: #64748b;
+  --color-ash: #94a3b8;
+  --color-stone: #cbd5e1;
+  --color-on-dark: #f8fafc;
+  --color-on-dark-mute: rgba(248, 250, 252, 0.72);
+
+  --color-badge-success: #059669;
+  --color-link: #1e40af;
+  --color-github-dark: #24292e;
+
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  --spacing-xxs: 2px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+  --spacing-xxl: 32px;
+  --spacing-xxxl: 48px;
+  --spacing-section: 96px;
+  --spacing-band: 160px;
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
