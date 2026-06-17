@@ -1,10 +1,10 @@
 const users = [
   { name: "Olivia Rhye", email: "olivia@email.com", role: "Admin", status: "Active", date: "Mar 12, 2025" },
   { name: "Phoenix Baker", email: "phoenix@email.com", role: "Editor", status: "Active", date: "Feb 8, 2025" },
-  { name: "Lana Steiner", email: "lana@email.com", role: "Viewer", status: "Inactive", date: "Jan 20, 2025" },
+  { name: "Lana Steiner", email: "lana@email.com", role: "Viewer", status: "Pending", date: "Jan 20, 2025" },
   { name: "Demi Wilkinson", email: "demi@email.com", role: "Editor", status: "Active", date: "Dec 3, 2024" },
-  { name: "Candice Wu", email: "candice@email.com", role: "Admin", status: "Active", date: "Nov 15, 2024" },
-  { name: "Natali Craig", email: "natali@email.com", role: "Viewer", status: "Inactive", date: "Oct 28, 2024" },
+  { name: "Candice Wu", email: "candice@email.com", role: "Admin", status: "Inactive", date: "Nov 15, 2024" },
+  { name: "Natali Craig", email: "natali@email.com", role: "Viewer", status: "Pending", date: "Oct 28, 2024" },
   { name: "Drew Cano", email: "drew@email.com", role: "Editor", status: "Active", date: "Sep 4, 2024" },
 ];
 
@@ -61,6 +61,8 @@ export function UsersTable() {
                     className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium leading-snug ${
                       u.status === "Active"
                         ? "bg-emerald-50 text-emerald-700"
+                        : u.status === "Pending"
+                        ? "bg-amber-50 text-amber-700"
                         : "bg-[var(--color-surface-subtle)] text-[var(--color-ash)]"
                     }`}
                   >
